@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sticky Position</title>
+    <link href="assests/css/normalize.css" rel="stylesheet">
+    <style>
+        body>main>section{
+            width:100vw;
+            height: 100vh;
+            border: white;
+            position: relative;
+        }
+
+        body{
+            margin: 0;
+        }
+
+
+        body>main>section:nth-child(1){
+
+            background: lightseagreen;
+        }
+
+        body>main>section:nth-child(2){
+
+            background: cornflowerblue ;
+        }
+
+        body>main>section:nth-child(3){
+
+            background: mediumvioletred ;
+        }
+
+        body>main>section:nth-child(4){
+
+            background: mediumspringgreen;
+        }
+
+
+
+       body>main>section:nth-child(1)>div{
+
+           width: 100vw;
+           height: 70px;
+           border: 1px solid deeppink;
+           position: sticky;
+           background: deeppink;
+           top: 0;
+       }
+
+        body>main>section:nth-child(2)>div{
+
+            width: 100vw;
+            height: 70px;
+            border: 1px darkviolet solid;
+            position: sticky;
+            background: darkviolet;
+            top: 0;
+        }
+
+        body>main>section:nth-child(3)>div{
+
+            width: 100vw;
+            height: 70px;
+            border: 1px tomato solid;
+            position: sticky;
+            background:  tomato;
+            top: 0;
+        }
+
+        body>main>section:nth-child(4)>div{
+
+            width: 100vw;
+            height: 70px;
+            border: 1px grey solid;
+            position: sticky;
+            background: gray;
+            top: 0;
+        }
+
+        body>main>section:nth-child(1)>aside{
+
+            position: absolute;
+            font-weight: bolder;
+            font-size: 90px;
+            font-family: "Bauhaus 93";
+            font-size: 100px;
+            padding-left: 40vw;
+            padding-top: 39vh;
+            color: deeppink;
+        }
+
+        body>main>section:nth-child(2)>aside{
+
+            position: absolute;
+            font-weight: bolder;
+            font-size: 90px;
+            font-family: "Bauhaus 93";
+            font-size: 100px;
+            padding-left: 40vw;
+            padding-top: 39vh;
+            color: darkviolet;
+        }
+
+        body>main>section:nth-child(3)>aside{
+
+            position: absolute;
+            font-weight: bolder;
+            font-size: 90px;
+            font-family: "Bauhaus 93";
+            font-size: 100px;
+            padding-left: 44vw;
+            padding-top: 39vh;
+            color: tomato;
+        }
+
+        body>main>section:nth-child(4)>aside{
+
+            position: absolute;
+            font-weight: bolder;
+            font-size: 90px;
+            font-family: "Bauhaus 93";
+            font-size: 100px;
+            padding-left: 40vw;
+            padding-top: 39vh;
+            color: grey;
+        }
+
+        body>main>section:nth-child(1)>div>h1{
+
+            font-family:  "Bauhaus 93";
+            color: white;
+        }
+
+        body>main>section:nth-child(2)>div>h1{
+
+            font-family:  "Bauhaus 93";
+            color: white;
+        }
+
+        body>main>section:nth-child(3)>div>h1{
+
+            font-family:  "Bauhaus 93";
+            color: white;
+        }
+
+        body>main>section:nth-child(4)>div>h1{
+
+            font-family:  "Bauhaus 93";
+            color: white;
+        }
+
+        ::-webkit-scrollbar {
+            display: none;
+        }
+
+
+    </style>
+</head>
+<body>
+<header></header>
+<main>
+    <section>
+        <div>
+            <h1>Card 1</h1>
+        </div>
+        <aside>
+            </h2>Hello !</h2>
+        </aside>
+
+    </section>
+
+    <section>
+        <div>
+            <h1>Card 2</h1>
+        </div>
+        <aside>
+            </h2>How</h2>
+        </aside>
+    </section>
+    <section>
+        <div>
+            <h1>Card 3</h1>
+        </div>
+        <aside>
+            </h2>Are</h2>
+        </aside>
+    </section>
+    <section>
+        <div>
+            <h1>Card 4</h1>
+        </div>
+        <aside>
+            </h2>You ?</h2>
+        </aside>
+    </section>
+</main>
+</body>
+</html>

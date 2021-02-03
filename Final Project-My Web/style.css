@@ -1,0 +1,295 @@
+body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  /* background-color: rgb(0, 195, 255); */
+  background-color: #1ed5ac;
+  /* overflow: hidden; */
+  overflow-x: hidden;
+}
+body::-webkit-scrollbar {
+  width: -1px;
+}
+.mainOne {
+  /* background: url(assests/img/h7-parallax-1.jpg); */
+
+  width: 95%;
+  height: 92%;
+  background-color: #f4f8fb;
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  border-radius: 40px;
+}
+.mainHeader {
+  position: absolute;
+  right: 0;
+  list-style: none;
+  display: inline;
+  cursor: pointer;
+}
+.mainHeader li {
+  position: relative;
+  display: inline;
+  margin: 10px;
+  top: 30px;
+  right: 40px;
+}
+.mainHeader i {
+  position: relative;
+  display: inline;
+  top: 30px;
+  right: 30px;
+  margin: 8px;
+  color: rgb(160, 156, 156);
+  cursor: pointer;
+}
+.mainSlider {
+  width: 50%;
+  height: 60%;
+  /* border: 1px solid red; */
+  position: absolute;
+  margin: auto;
+  right: 50px;
+  top: 150px;
+  overflow: hidden;
+}
+.sliderOne {
+  height: 100%;
+  /* border: 1px solid crimson; */
+  width: 400%;
+  display: flex;
+}
+.sliderOne div {
+  /* border: 1px solid yellow; */
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  left: 10px;
+  animation: slider 15s infinite;
+}
+@keyframes slider {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-100%);
+  }
+  50% {
+    transform: translateX(-200%);
+  }
+  75% {
+    transform: translateX(-300%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+.img1 {
+  background: url(assests/img/h7-slide-1-img-1.png);
+}
+.img2 {
+  background: url(assests/img/h7-slide-2-img-1.png);
+}
+.img3 {
+  background: url(assests/img/SaaS-1.png);
+}
+.img4 {
+  background: url(assests/img/SaaS-2.png);
+}
+.mainWord1 {
+  position: absolute;
+  margin: auto;
+}
+.mainSlider2 {
+  width: 46.5%;
+  height: 60%;
+  position: absolute;
+  top: 120px;
+  overflow: hidden;
+
+  /* border: 1px solid red; */
+}
+.firstWord {
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  bottom: 20;
+}
+.mainWord01 {
+  font-size: 27px;
+  position: absolute;
+  margin: 5px 0;
+  top: 145px;
+  left: 60;
+  color: #444444;
+  font-family: 'Ubuntu', sans-serif;
+  box-sizing: border-box;
+}
+.mainWord02 {
+  font-size: 60px;
+  position: absolute;
+  margin: auto;
+  left: 55;
+  top: 185;
+  color: #444444;
+  box-sizing: border-box;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 600;
+  margin-left: -3px;
+}
+.mainWord03 {
+  font-size: 32px;
+  position: absolute;
+  margin: auto;
+  top: 260px;
+  left: 60;
+  color: #444444;
+  font-family: 'Ubuntu', sans-serif;
+  box-sizing: border-box;
+}
+.flip li {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 40px;
+  line-height: 60px;
+  display: block;
+  color: crimson;
+  font-style: inherit;
+}
+.f1 {
+  animation: anim 12s infinite;
+}
+
+.flip {
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+  position: absolute;
+  left: 310;
+  top: 265;
+  width: 226.525;
+  height: 57.95;
+}
+@keyframes anim {
+  0% {
+    margin-top: 0;
+  }
+  16% {
+    margin-top: -60px;
+  }
+  33% {
+    margin-top: -120px;
+  }
+  50% {
+    margin-top: -180px;
+  }
+  66% {
+    margin-top: -120px;
+  }
+  82% {
+    margin-top: -60px;
+  }
+  100% {
+    margin-top: 0;
+  }
+}
+.hireMe {
+  position: absolute;
+  margin: auto;
+  left: 60;
+  top: 320;
+  font-size: 25px;
+  display: inline-block;
+  background: #1fbdf2;
+  color: rgb(255, 255, 255);
+  padding: 12px 36px;
+  margin-top: 20px;
+  font-weight: 400;
+  border-radius: 60px;
+  border: 2px solid#1FBDF2;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  font-family: Montserrat, sans-serif;
+}
+.hireMe:hover {
+  background-color: #1fd4b3;
+  /* background: none; */
+}
+.mainLogo li:nth-child(1) {
+  position: absolute;
+  display: inline;
+  list-style: none;
+  margin: auto;
+  font-size: 40px;
+  left: 30;
+  top: 15;
+  font-family: 'Ubuntu', sans-serif;
+}
+.mainLogo li:nth-child(2) {
+  position: absolute;
+  display: inline;
+  list-style: none;
+  margin: auto;
+  font-size: 40px;
+  left: 135;
+  top: 15;
+  font-family: 'Ubuntu', sans-serif;
+  color: #1fd4b3;
+}
+.main2 {
+  overflow: hidden;
+  height: 200%;
+  width: 100%;
+  overflow-x: hidden;
+}
+/* .myImage {
+  border-style: solid;
+  position: absolute;
+  width: 508px;
+  height: 517px;
+  bottom: -611px;
+  border-radius: 52px;
+  left: 84px;
+  overflow: hidden;
+  background: white;
+}
+.myPhoto {
+  width: 508px;
+  height: 517px;
+  background-size: cover;
+  cursor: pointer;
+}
+
+.infor{
+  background: white;
+} */
+
+.container div {
+  width: 508px;
+  height: 517px;
+  bottom: -847px;
+  left: 343px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  border-radius: 10px;
+}
+.img {
+  background-image: url('assests/img/142607556_2819216078338550_3078515812959511013_n.jpg');
+  background-position: center;
+  background-size: cover;
+  cursor: pointer;
+  z-index: 1;
+  transform: translate(-50%, calc(-50% - 40px));
+}
+.infor {
+  background: white;
+  transform: translate(-50%, calc(-50% + 40px));
+}
+
+.container slide img {
+  transform: translate(-50%, calc(-50% - 40px));
+}

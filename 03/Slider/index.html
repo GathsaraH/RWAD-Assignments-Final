@@ -1,0 +1,83 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="assests/css/normalize.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Slider CSS</title>
+    <style>
+      section {
+        overflow: hidden;
+      }
+      main > section > figure {
+        position: relative;
+        width: 500%;
+        margin: 9;
+        left: 0;
+        animation: 20s slider infinite;
+      }
+      main > section > figure > img {
+        height: 100vh;
+        width: 100vw;
+        float: left;
+      }
+      @keyframes slider {
+        0% {
+          left: 0;
+        }
+
+        25% {
+          left: -100%;
+        }
+        50% {
+          left: -200%;
+        }
+        75% {
+          left: -300%;
+        }
+
+        /* 0% {
+          left: 0;
+        }
+        20% {
+          left: 0;
+        }
+        25% {
+          left: -100%;
+        }
+        45% {
+          left: -100%;
+        }
+        50% {
+          left: -200%;
+        }
+        70% {
+          left: -200%;
+        }
+        95% {
+          left: -300%;
+        }
+        100% {
+          left: -400%;
+        } */
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <section>
+        <figure>
+          <img src="assests/img/8620_peyzazh-mo.jpg" alt="Slider-1" />
+
+          <img
+            src="assests/img/cats_blue_eyes_animals_pets_4288x2848.jpg"
+            alt="Slider-2"
+          />
+
+          <img src="assests/img/img1.jpg" alt="Slier-3" />
+
+          <img src="assests/img/Wallpaper 2.png" alt="Slider-4" />
+        </figure>
+      </section>
+    </main>
+  </body>
+</html>

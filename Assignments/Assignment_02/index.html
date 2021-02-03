@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Simple Web Layout</title>
+    <link href="assests/css/normalize.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Redressed&display=swap" rel="stylesheet">
+    <link href="assests/fonts/css/all.min. css">
+
+     <style>
+
+         *{
+            font-family: 'Redressed', cursive;
+         }
+         header{
+             height: 80px;
+             background: white;
+             box-shadow: 1px 2px 4px 3px #d1c0c066;
+             position: relative;
+         }
+
+         body{
+             margin: 0;
+         }
+
+         header>img{
+             width: 221px;
+             padding: 6px;
+             padding-left: 15px;
+         }
+
+         header>ul{
+             position: absolute;
+             right: 34px;
+             top: 0;
+             list-style: none;
+             font-size: 20px;
+         }
+
+         header>ul>li {
+             display: inline-block;
+             padding: 5px;
+             cursor: pointer;
+             font-weight: bold;
+             color: gray;
+         }
+
+         header>ul>li>i{
+             color: lightseagreen;
+             margin-right: 6px;
+         }
+
+         body>footer{
+             height: 38px;
+             background: lightseagreen;
+             position: relative;
+             top: -19px;
+
+
+         }
+
+         footer>h3{
+             color: white;
+             text-align: center;
+             padding: 7px;
+         }
+
+         main{
+             position: relative;
+         }
+
+         main>nav{
+             width: 205px;
+             background: darkviolet;
+             position: absolute;
+             top: 5px;
+             bottom: 0;
+         }
+
+         main>nav>ul{
+             list-style: none;
+         }
+
+         main>nav>ul>li{
+             color: white;
+             font-size: 20px;
+             padding: 10px;
+             cursor: pointer;
+         }
+
+         main>nav>ul>li>i{
+             color: white;
+         }
+
+         main>section{
+              margin-left:  214px;
+             padding: 6px;
+         }
+
+         p::selection{
+             background: deeppink;
+             color: white;
+         }
+
+         p::first-letter{
+             font-size: 30px;
+         }
+
+         main>section>section{
+             height: 250px;
+             position: relative;
+             //border: 1px solid crimson;
+         }
+
+         main>section>section>div{
+             //border: 1px solid purple;
+             height: 100%;
+             width: calc((100%/3)*1);
+            position: absolute;
+         }
+
+         main>section>section>div:nth-child(1){
+             left: 0;
+             background: url("assests/images/Domcake-Dancing-Alien.gif");
+             background-size: 300px;
+             background-position: center;
+         }
+         main>section>section>div:nth-child(2){
+             left: calc((100%/3)*1);
+             background: url("assests/images/Domcake-Dancing-Alien.gif");
+             background-size: 300px;
+             background-position: center;
+         }
+         main>section>section>div:nth-child(3){
+             left: calc((100%/3)*2);
+             background: url("assests/images/Domcake-Dancing-Alien.gif");
+             background-size: 300px;
+             background-position: center;
+         }
+
+     </style>
+
+</head>
+<body>
+<header>
+   <img alt="Logo" src="assests/images/ijse.png">
+
+    <ul>
+        <li><i class="fas fa-home"></i>Home</li>
+        <li><i class="fas fa-server"></i>Service</li>
+        <li><i class="fas fa-users"></i>Contacts</li>
+        <li><i class="fas fa-address-card"></i>AboutUs</li>
+    </ul>
+
+</header>
+
+<main>
+    <nav>
+        <ul>
+            <li><i class="fas fa-home"></i>Home</li>
+            <li><i class="fas fa-server"></i>Service</li>
+            <li><i class="fas fa-users"></i>Contacts</li>
+            <li><i class="fas fa-address-card"></i>AboutUs</li>
+        </ul>
+    </nav>
+
+    <section>
+        <section>
+            <div></div>
+            <div></div>
+            <div></div>
+        </section>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi autem cum dignissimos laboriosam magni odit
+            quia quidem repellendus tenetur vero. Accusamus aliquam amet dolores esse eveniet nemo neque quibusdam
+            repellat Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur eius, est id laborum mollitia
+            possimus quia! A commodi cum, dolore eligendi magnam natus odio officiis perferendis placeat porro, vitae
+            voluptates!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi autem cum dignissimos laboriosam magni odit
+            quia quidem repellendus tenetur vero. Accusamus aliquam amet dolores esse eveniet nemo neque quibusdam
+            repellat Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur eius, est id laborum mollitia
+            possimus quia! A commodi cum, dolore eligendi magnam natus odio officiis perferendis placeat porro, vitae
+            voluptates!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi autem cum dignissimos laboriosam magni odit
+            quia quidem repellendus tenetur vero. Accusamus aliquam amet dolores esse eveniet nemo neque quibusdam
+            repellat Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur eius, est id laborum mollitia
+            possimus quia! A commodi cum, dolore eligendi magnam natus odio officiis perferendis placeat porro, vitae
+            voluptates!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi autem cum dignissimos laboriosam magni odit
+            quia quidem repellendus tenetur vero. Accusamus aliquam amet dolores esse eveniet nemo neque quibusdam
+            repellat Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur eius, est id laborum mollitia
+            possimus quia! A commodi cum, dolore eligendi magnam natus odio officiis perferendis placeat porro, vitae
+            voluptates!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi autem cum dignissimos laboriosam magni odit
+            quia quidem repellendus tenetur vero. Accusamus aliquam amet dolores esse eveniet nemo neque quibusdam
+            repellat Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur eius, est id laborum mollitia
+            possimus quia! A commodi cum, dolore eligendi magnam natus odio officiis perferendis placeat porro, vitae
+            voluptates!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi autem cum dignissimos laboriosam magni odit
+            quia quidem repellendus tenetur vero. Accusamus aliquam amet dolores esse eveniet nemo neque quibusdam
+            repellat Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur eius, est id laborum mollitia
+            possimus quia! A commodi cum, dolore eligendi magnam natus odio officiis perferendis placeat porro, vitae
+            voluptates!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi autem cum dignissimos laboriosam magni odit
+            quia quidem repellendus tenetur vero. Accusamus aliquam amet dolores esse eveniet nemo neque quibusdam
+            repellat Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur eius, est id laborum mollitia
+            possimus quia! A commodi cum, dolore eligendi magnam natus odio officiis perferendis placeat porro, vitae
+            voluptates!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi autem cum dignissimos laboriosam magni odit
+            quia quidem repellendus tenetur vero. Accusamus aliquam amet dolores esse eveniet nemo neque quibusdam
+            repellat Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur eius, est id laborum mollitia
+            possimus quia! A commodi cum, dolore eligendi magnam natus odio officiis perferendis placeat porro, vitae
+            voluptates!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi autem cum dignissimos laboriosam magni odit
+            quia quidem repellendus tenetur vero. Accusamus aliquam amet dolores esse eveniet nemo neque quibusdam
+            repellat Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur eius, est id laborum mollitia
+            possimus quia! A commodi cum, dolore eligendi magnam natus odio officiis perferendis placeat porro, vitae
+            voluptates!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi autem cum dignissimos laboriosam magni odit
+            quia quidem repellendus tenetur vero. Accusamus aliquam amet dolores esse eveniet nemo neque quibusdam
+            repellat Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur eius, est id laborum mollitia
+            possimus quia! A commodi cum, dolore eligendi magnam natus odio officiis perferendis placeat porro, vitae
+            voluptates!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi autem cum dignissimos laboriosam magni odit
+            quia quidem repellendus tenetur vero. Accusamus aliquam amet dolores esse eveniet nemo neque quibusdam
+            repellat Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur eius, est id laborum mollitia
+            possimus quia! A commodi cum, dolore eligendi magnam natus odio officiis perferendis placeat porro, vitae
+            voluptates!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi autem cum dignissimos laboriosam magni odit
+            quia quidem repellendus tenetur vero. Accusamus aliquam amet dolores esse eveniet nemo neque quibusdam
+            repellat Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur eius, est id laborum mollitia
+            possimus quia! A commodi cum, dolore eligendi magnam natus odio officiis perferendis placeat porro, vitae
+            voluptates!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi autem cum dignissimos laboriosam magni odit
+            quia quidem repellendus tenetur vero. Accusamus aliquam amet dolores esse eveniet nemo neque quibusdam
+            repellat Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur eius, est id laborum mollitia
+            possimus quia! A commodi cum, dolore eligendi magnam natus odio officiis perferendis placeat porro, vitae
+            voluptates!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi autem cum dignissimos laboriosam magni odit
+            quia quidem repellendus tenetur vero. Accusamus aliquam amet dolores esse eveniet nemo neque quibusdam
+            repellat Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur eius, est id laborum mollitia
+            possimus quia! A commodi cum, dolore eligendi magnam natus odio officiis perferendis placeat porro, vitae
+            voluptates!</p>
+
+
+    </section>
+</main>
+
+<footer>
+ <h3>Developed By Bhashana</h3>
+</footer>
+</body>
+</html>

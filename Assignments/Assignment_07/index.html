@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Slider Animation</title>
+    <link rel="stylesheet" href="assests/css/normalize.css">
+    <style>
+
+                 body{
+                     overflow: hidden;
+                     margin: 0;
+                 }
+
+
+             section>figure{
+
+                position: relative;
+                width: 300%;
+                height: 200%;
+                margin: 5px;
+                 padding-left: 90px;
+                left: 0;
+                animation: 35s slider infinite;
+        }
+
+             body>section>figure>img{
+                width: 100vw;
+                height: 100vh;
+                 float: left;
+             }
+
+             .japanese{
+                // background-color: darkslateblue;
+                 width: 100vw;
+             }
+
+             .japanese{
+
+                 width: 60vw;
+                 height: 100vh;
+             }
+
+             .bonsai{
+
+                 width: 60vw;
+                 height: 100vh;
+             }
+             
+
+               .michael{
+
+                      height: 100vh;
+                      width: 40vw;
+             }
+
+
+
+               .lady {
+                   height: 90vh;
+                   width: 40vw;
+                 justify-content: center;
+                  // position: absolute;
+                   display: flex;
+
+               }
+
+            
+                .stand{
+
+                    width: 40vw;
+                    height: 70vh;
+
+                }
+
+                .action{
+
+                    width: 10vw;
+                    height: 1000vh;
+
+                }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+              @keyframes slider {
+
+            0%{
+              left: 0;
+            }
+            25%{
+             left: -100%;
+             }
+            50%{
+             left: -200%;
+             }
+
+
+
+
+
+
+
+
+
+
+
+        }
+
+
+    </style>
+
+
+
+</head>
+<body>
+<section>
+    <figure>
+       <img src="assests/images/tree.png" alt="image of bonsai" class="bonsai">
+         <img src="assests/images/MSGFINAL.png" alt="japanese image" class="japanese">
+        <img src="assests/images/girl.png" alt="image of a lady" class="lady face">
+           <img src="assests/images/jackson.png" alt="color splash" class="michael jackson ">
+        <div>
+               <img src="assests/images/unnamed.png" alt="stand jackson" class="stand">
+        </div>
+        <img src="assests/images/action.png" alt="action pic" class="action">
+
+    </figure>
+
+
+
+
+
+
+
+
+</section>
+
+
+</body>
+</html>

@@ -1,0 +1,42 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      main > section > div {
+        width: 1px;
+        height: 1px;
+        border: 1px solid red;
+        position: absolute;
+        border-radius: 100%;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        /* background-position: center; */
+        animation: water 2s infinite;
+      }
+      @keyframes water {
+        from {
+          width: 1px;
+          height: 1px;
+          opacity: 4;
+        }
+        to {
+          width: 400px;
+          height: 400px;
+          opacity: 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <section>
+        <div></div>
+      </section>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+        <title>Home Word CSS</title>
+        <link  href="assests/normalize.css">
+        <style>
+            section:nth-child(1){
+                width: 100vw;
+                height: 100vh;
+                border: 1px dashed black;
+            }
+            section:nth-child(1)>div:nth-child(1) {
+                width: 50vw;
+                height: 50vh;
+                position: relative;
+                background-color: red;
+            }
+            section:nth-child(1)>div:nth-child(2) {
+                width: 50vw;
+                height: 50vh;
+                position: relative;
+                left: 960px;
+                bottom: 439px;
+                background-color: green;
+            }
+            section:nth-child(1)>div:nth-child(3) {
+                width: 50vw;
+                height: 50vh;
+                position: relative;
+                bottom: 309px;
+                background-color: yellow;
+            }
+            section:nth-child(1)>div:nth-child(4) {
+                width: 50vw;
+                height: 50vh;
+                position: relative;
+                bottom: 619px;
+                left: 850px;
+                background-color:rgb(185, 24, 131);
+            }
+            section:nth-child(1)>dev:nth-child(1)>span:nth-child(1){
+                height: 40px;
+                width: 40px;
+                background-color: white;
+                border-radius: 50%;
+                display: inline-block;
+            }
+            section:nth-child(1)>div:nth-child(1)>span:nth-child(1){
+                height:100px;
+                width: 100px;
+                background-color: white;
+                border-radius: 0 0 100% 0;
+                display: inline-block; 
+            }
+            section:nth-child(1)>div:nth-child(2)>span:nth-child(2){
+                height:100%;
+                width: 100%;
+                background-color: white;
+                border-radius: 50%;
+                display: inline-block; 
+            }
+
+            #span2{
+                height:100px;
+                width: 100px;
+                position: relative;
+                background-color: white;
+                border-radius: 0 0 0 100px;
+                display: inline-block;
+                left: 860px;
+            }
+            #span3{
+                height:100px;
+                width: 100px;
+                background-color: white;
+                border-radius: 50%;
+                display: inline-block;
+                right: 500px; 
+            }
+            #span4{
+                height:100px;
+                width: 100px;
+                background-color: white;
+                border-radius: 50%;
+                display: inline-block;
+                right: 500px;  
+            }
+
+
+        </style>
+    </head>
+    <body>
+      <section>
+
+      <div id="div1">
+          <span id="span1"></span>
+      </div>
+
+      <div id="div2">
+          <span id="span2"></span>
+      </div>
+
+      <div id="div3">
+        <span id="span3"></span>
+      </div>
+
+      <div id="div4">
+        <span id="span4"></span>
+      </div>
+
+
+      
+      </section>
+
+      
+
+    </body>
+</html>
